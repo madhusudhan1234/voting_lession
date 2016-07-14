@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('community','CommunityLinkController@index');
+Route::post('community','CommunityLinkController@store');

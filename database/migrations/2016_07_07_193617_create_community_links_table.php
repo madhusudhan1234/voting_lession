@@ -14,9 +14,11 @@ class CreateCommunityLinksTable extends Migration
     {
         Schema::create('community_links', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->index();
+            $table->integer('channel_id')->index();
             $table->string('title');
-            $table->string('slug')->unique();
-            $table->string('color');
+            $table->string('link')->unique();
+            $table->boolean('approved')->default(0);
             $table->timestamps();
         });
     }
