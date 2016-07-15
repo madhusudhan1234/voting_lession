@@ -18,4 +18,14 @@ class Channel extends Model
         'slug',
         'color',
     ];
+
+    /**
+     * Return The Slug
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

@@ -2,7 +2,9 @@
 
 namespace App;
 
+use App\Exceptions\CommunityLinkAlreadySubmitted;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Schema\Builder;
 
 /**
  * Class CommunityLink
@@ -18,6 +20,22 @@ class CommunityLink extends Model
         'link',
         'title'
     ];
+
+    /**
+     * Scope The query to records from a particular channel
+     *
+     * @param  Builder $builder
+     * @param Channel $channel
+     * @return Builder
+     */
+    public static function scopeForChannel($builder, $channel)
+    {
+        if($channel->exists){
+            return $builder->where('channel_id',$channel->id);
+        }
+
+        return $builder;
+    }
 
     /**
      * A community link has a creator
@@ -46,28 +64,55 @@ class CommunityLink extends Model
         return $link;
     }
 
+
     /**
-     * Contribute the community link
+     * Contribute The Community Link
      *
-     * @param $attribute
+     * @param $attributes
      * @return bool
+     * @throws CommunityLinkAlreadySubmitted
      */
-    public function contribute($attribute)
+    public function contribute($attributes)
     {
-        return $this->fill($attribute)->save();
+        if($existing = $this->hasAlreadyBeenSubmitted($attributes['link'])){
+            return $existing->touch();
+
+            throw new CommunityLinkAlreadySubmitted();
+        }
+
+        return $this->fill($attributes)->save();
     }
 
+    /**
+     * Mark The community link as approved
+     *
+     * @return $this
+     */
     public function approve()
     {
         $this->approved = true;
 
         return $this;
     }
+
     /**
+     * CommunityLink Belong To Channel
+     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function channel()
     {
         return $this->belongsTo(Channel::class);
+    }
+
+    /**
+     * Check If there is link already Exist
+     *
+     * @param $link
+     * @return mixed
+     */
+    protected function hasAlreadyBeenSubmitted($link)
+    {
+        return static::where('link',$link)->first();
     }
 }

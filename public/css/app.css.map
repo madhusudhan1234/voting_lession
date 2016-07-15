@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AACA;EACE,kBAAmB,EACpB","file":"app.css","sourcesContent":["// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\r\n.list-group-item > .label{\r\n  margin-right : 1em;\r\n}"],"sourceRoot":"/source/"}
