@@ -105,6 +105,16 @@ class CommunityLink extends Model
         return $this->belongsTo(Channel::class);
     }
 
+    /*
+     *A Community Link may have many votes
+     *
+     *@return \Illiminate\Database\Eloquent\Relations\HasMany
+     */
+    public function votes()
+    {
+        return $this->hasMany(CommunityLinkVote::class,'community_link_id');
+    }
+
     /**
      * Check If there is link already Exist
      *

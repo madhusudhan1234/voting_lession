@@ -24,10 +24,10 @@ class CommunityLinkController extends Controller
      */
     public function index(Channel $channel = null)
     {
-        $links = CommunityLink::forChannel($channel)
+        $links = CommunityLink::with('votes')->forChannel($channel)
             ->where('approved', '1')
             ->latest()
-            ->paginate(3);
+            ->paginate(3);    
 
         $channels = Channel::orderBy('title', 'asc')->get();
 
@@ -60,4 +60,4 @@ class CommunityLinkController extends Controller
 
         return back();
     }
-}
+} 
