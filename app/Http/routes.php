@@ -19,6 +19,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('hello','VotesController@hello');
 Route::get('community','CommunityLinkController@index');
 Route::post('community','CommunityLinkController@store');
 Route::get('community/{channel}','CommunityLinkController@index');

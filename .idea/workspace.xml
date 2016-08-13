@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dcf2bb1-0015-4ea1-b09b-265ea8a1ca6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CommunityLinkController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommunityLinkController.php" />
     </list>
     <ignored path="voting_lession.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,10 +69,10 @@
         <option value="$PROJECT_DIR$/resources/views/community/list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Channel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CommunityLinkController.php" />
         <option value="$PROJECT_DIR$/app/CommunityLink.php" />
         <option value="$PROJECT_DIR$/resources/views/community/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CommunityLinkController.php" />
       </list>
     </option>
   </component>
@@ -145,45 +145,14 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="voting_lession" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="voting_lession" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="voting_lession" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="voting_lession" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="voting_lession" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../needketing" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Plugins&#9;ACTION&#9;WelcomeScreen.Plugins&#10;plugins&#9;null&#9;null&#10;channe&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Channel.php&#10;Channe&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Channel.php&#10;routes&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Http/routes.php&#10;index&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/resources/views/community/index.blade.php&#10;CLF&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Http/Requests/CommunityLinkForm.php&#10;CLC&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Http/Controllers/CommunityLinkController.php&#10;Community&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/CommunityLink.php&#10;Termin&#9;ACTION&#9;ActivateTerminalToolWindow&#10;Ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;app.bla&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/resources/views/layouts/app.blade.php&#10;app.php&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/config/app.php&#10;Channel&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/database/migrations/2016_07_07_193541_create_channels_table.php&#10;users&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/database/migrations/2014_10_12_000000_create_users_table.php&#10;Chann&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Channel.php&#10;Communit&#9;null&#9;null&#10;CommunityLink&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/CommunityLink.php&#10;routes.&#9;FILE&#9;file:///home/madhu/Workspace/Laravel/voting_lession/app/Http/routes.php" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -310,11 +279,12 @@
       <workItem from="1470822344073" duration="400000" />
       <workItem from="1470822768688" duration="2106000" />
       <workItem from="1470839429016" duration="32000" />
+      <workItem from="1471090400377" duration="714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48802000" />
+    <option name="totallyTimeSpent" value="49516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,10 +297,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="768" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

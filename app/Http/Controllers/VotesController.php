@@ -16,6 +16,11 @@ class VotesController extends Controller
 		$this->middleware('auth');
 	}
 
+	public function hello()
+    {
+        return "Hello Brother";
+    }
+    
     public function store(CommunityLink $link)
     {
     	auth()->user()->togglevoteFor($link);
